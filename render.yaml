@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ultimate-ai-trader
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main_live.py
+    envVars:
+      - key: BITFINEX_API_KEY
+        value: your_bitfinex_api_key_here
+      - key: BITFINEX_API_SECRET
+        value: your_bitfinex_api_secret_here
+      - key: NEWS_API_KEY
+        value: your_news_api_key_here
