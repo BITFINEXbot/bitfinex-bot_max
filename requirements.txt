@@ -16,6 +16,7 @@ seaborn
 xgboost
 joblib
 
-sklearn
+scikit-learn
+
 
 newsapi-python
